@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #fbf9f5;
+    color: #1b1c1a;
+  }
+
+  h1, h2, h3, .font-display, .font-serif-craft {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbars & focus accents */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.search-input:focus {
+  border-bottom-color: #bd5419;
+  box-shadow: 0 1px 0 0 #bd5419;
+}
+
